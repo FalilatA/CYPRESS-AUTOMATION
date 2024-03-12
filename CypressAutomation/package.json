@@ -12,6 +12,7 @@
     "webpack-dev-server": "^5.0.3"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/bootstrapAlertTest"
   }
 }

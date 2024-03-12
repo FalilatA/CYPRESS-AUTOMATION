@@ -1,7 +1,7 @@
 export class BootstrapAlerts{
     //Objects
     alertsAndModalDropdown = "#navbar-brand-centered > ul.nav.navbar-nav.navbar-right > li:nth-child(2) > a"
-    bootstrapAlertsOption = "li[class='dropdown open'] li:nth-child(2) a:nth-child(1)"
+    bootstrapAlertsOption = "li[class='dropdown open'] li:nth-child(1) a:nth-child(1)"
     autocloseableAlertButton = "#autoclosable-btn-success"
     normalAlertButton = "#normal-btn-success"
     closeNormalAlertIcon = "div[class='alert alert-success alert-normal-success'] button[type='button']"
@@ -22,21 +22,20 @@ export class BootstrapAlerts{
     }
 
     verifyAutocloseableAlertCloses(){
-        cy.wait(5000)
-        cy.get(this.autocloseableAlertButton).should('be.clickable')
+        cy.wait(7000)
+        cy.get(".alert.alert-success.alert-autocloseable-success").should('not.be.visible')
     }
 
     clickNormalAlertOption(){
         cy.get(this.normalAlertButton).click()
-        cy.get('.alert.alert-success.alert-normal-success').should('contain', 'To close use the appropriate button.')
+        cy.contains("I'm a normal success message. To close use the appropriate button.").should('be.visible')
     }
 
     clickCloseIcon(){
         cy.get(this.closeNormalAlertIcon).click()
-        cy.get('.alert.alert-success.alert-normal-success').should('not.visible')
     }
 
     verifyNormalAlertCloses(){
-        cy.get('.alert.alert-success.alert-normal-success').should('not.visible')
+        cy.contains("I'm a normal success message. To close use the appropriate button.").should('not.be.visible')
     }
 }
