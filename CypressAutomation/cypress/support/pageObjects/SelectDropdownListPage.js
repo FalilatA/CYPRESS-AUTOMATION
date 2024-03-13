@@ -4,25 +4,26 @@ export class SelectDropdownList{
     //Select list demo page elements
     dropdownListOption = "li[class='dropdown open'] li:nth-child(4) a:nth-child(1)"
     selectDayDropdown = "#select-demo.form-control"
+    selectedDayDisplay = "#easycont > div > div.col-md-6.text-left > div:nth-child(4) > div.panel-body > p.selected-value"
     //Multi select list demo page elements
     multiSelectBox = "#multi-select"
     firstSelectedButton = "#printMe.btn.btn-primary"
     getAllSelectedButton = "#printAll.btn.btn-primary"
 
-    clickTheDropdownListOption(){
+    clickInputFormsDropdown(){
         cy.get(this.inputFormsDropdown).click()
+    }
+    
+    clickTheDropdownListOption(){
         cy.get(this.dropdownListOption).click()
-        cy.contain('We have listed two examples 1. Single Select and 2. Multi Select').should('be.visible')
+        cy.contains('We have listed two examples 1. Single Select and 2. Multi Select').should('be.visible')
     }
 
-    //Methods for select list demo
-    selectADay(){
-        cy.get(this.selectDayDropdown).then(($select) => {
-            const dayOptions = $select.find('day');
-            const randomIndex = Math.floor(Math.random() * dayOptions.length);
-            const randomOptionValue = dayOptions.eq(randomIndex).val();
-            cy.wrap($select).select(randomOptionValue);
-            return randomOptionValue;
-        });
+    selectDay(){
+        cy.get(this.selectDayDropdown).select('Wednesday')
+    }
+
+    verifySelectedDay(){
+        cy.get(this.selectedDayDisplay).contains('Wednesday')
     }
 }

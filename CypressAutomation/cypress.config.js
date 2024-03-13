@@ -7,15 +7,7 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber())
     },
     specPattern: "cypress/e2e/*.feature",
+    watchForFileChanges: false,
     baseUrl: 'https://demo.seleniumeasy.com/',
   },
 });
-// module.exports = ({
-//   e2e: {
-//     baseUrl: 'https://demo.seleniumeasy.com/',
-//     watchForFileChanges: true,
-//     specPattern: "**/*.feature",
-//     supportFile:'cypress/support/e2e.js',
-//     specPattern: "**/*.feature",
-//     supportFile:'cypress/support/e2e.js'
-//   },

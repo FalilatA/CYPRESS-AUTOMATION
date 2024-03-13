@@ -14,10 +14,13 @@ export class BoostrapModals{
     secondModalCloseButton = "div[id='myModal2'] a[class='btn']"
     secondModalSaveButton = "div[id='myModal2'] a[class='btn btn-primary']"
 
-    clickBootstrapModalOption(){
+    clickAlertsAndModalDropdown(){
         cy.get(this.alertsAndModalDropdown).click()
+    }
+
+    clickBootstrapModalOption(){
         cy.get(this.bootstrapModalsOption).click()
-        cy.contain('Bootstrap Modal Example for Automation').should('be.visible')
+        cy.contains('Bootstrap Modal Example for Automation').should('be.visible')
     }
 
     //Methods for single modal example
@@ -28,42 +31,44 @@ export class BoostrapModals{
 
     clickCloseModalButton(){
         cy.get(this.singleModalCloseButton).click()
-        cy.contain('Single Modal Example').should('be.visible')
+        cy.contains('Single Modal Example').should('be.visible')
     }
 
     clickSaveChanges(){
         cy.get(this.singleModalSaveButton).click()
-        cy.contain('Bootstrap Modal Example for Automation').should('be.visible')
+    }
+
+    verifySaveChanges(){
+        cy.contains('Bootstrap Modal Example for Automation').should('be.visible')
     }
 
     //Methods for multiple modal example
     clickLunchMultipleModalButton(){
         cy.get(this.firstModalLunchButton).click()
-        cy.contain('First Modal').should('be.visible')
+        cy.contains('First Modal').should('be.visible')
     }
 
     clickFirstModalCloseButton(){
         cy.get(this.firstModalCloseButton).click()
-        cy.contain('Multiple Modal Example').should('be.visible')
+        cy.contains('Multiple Modal Example').should('be.visible')
     }
 
     clickFirstModalSaveButton(){
         cy.get(this.firstModalSaveButton).click()
-        cy.contain('Bootstrap Modal Example for Automation').should('be.visible')
+        cy.contains('Bootstrap Modal Example for Automation').should('be.visible')
     }
 
     clickSecondModalLaunchButton(){
         cy.get(this.secondModalLunchButton).click()
-        cy.contain('Modal 2').should('be.visible')
+        cy.contains('Modal 2').should('be.visible')
     }
 
     clickSecondModalCloseButton(){
         cy.get(this.secondModalCloseButton).click()
-        cy.contain('First Modal').should('be.visible')
+        cy.contains('First Modal').should('be.visible')
     }
 
     clickSecondModalSaveButton(){
         cy.get(this.secondModalSaveButton).click()
-        cy.contain('Bootstrap Modal Example for Automation').should('be.visible')
     }
 }

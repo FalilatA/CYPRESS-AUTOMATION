@@ -1,4 +1,4 @@
-Feature: Bootstrap alerts functonality
+Feature: Bootstrap alerts functionality
 
     This feature enables a user to be able view autocloseable and normal alert type
 
