@@ -5,19 +5,19 @@ This repository contains answers to the QUIDAX Quality Assurance Engineer Assess
 Task 1- Functional testing and defect management
 Design test cases for the following forms and document all defects identified with clear reproducible steps
 1. Input forms:
-Simple form demo: Single input field and multiple input fields
-Select Dropdown List: Select List Demo and Multi Select List Demo
+* Simple form demo: Single input field and multiple input fields
+* Select Dropdown List: Select List Demo and Multi Select List Demo
 2. Alerts and models:
-Bootstrap alerts: Bootstrap alert messages
-Bootstrap modal: Single modal example and Multiple modal example
-You can also indicate improvement recommendations to the respective forms.
+* Bootstrap alerts: Bootstrap alert messages
+* Bootstrap modal: Single modal example and Multiple modal example
+* You can also indicate improvement recommendations to the respective forms.
 
 Task 2- Test Automation
 Write automated web-based tests for all positive test cases designed in Task 1
 * A JavaScript framework eg Cypress is recommended. You can also use any other framework you are comfortable working with.
 * The framework should be designed using a page object model approach.
 * Incorporate BDD into the framework if you are familiar with it.
-Notes: Each test case should include validations for form actions. For example, In the single form demo page, when you enter a value into the text field, your test should actually check that the content matches what is displayed after clicking the ‘Show message’ button.
+* Notes: Each test case should include validations for form actions. For example, In the single form demo page, when you enter a value into the text field, your test should actually check that the content matches what is displayed after clicking the ‘Show message’ button.
 
 ## Task 1
 The solutions can be accessed with google sheet via https://docs.google.com/spreadsheets/d/14SBLjZzp2FaHVPvxToNPB4rDMB2S9SzsYeXdO61zro4/edit?usp=sharing
