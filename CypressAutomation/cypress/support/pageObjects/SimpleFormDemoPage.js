@@ -74,7 +74,7 @@ export class SimpleFormDemo{
 
     verifyTotalValue(){
         cy.fixture('inputFormData').then((data) => {
-            cy.get(this.totalValueDisplay).should('contain', data.valueA+data.valueB)
+            cy.get(this.totalValueDisplay).should('contain', data.valueA+rN+data.valueB+rN)
         });
     }
 }
