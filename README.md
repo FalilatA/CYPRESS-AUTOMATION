@@ -20,7 +20,7 @@ Write automated web-based tests for all positive test cases designed in Task 1
 * Notes: Each test case should include validations for form actions. For example, In the single form demo page, when you enter a value into the text field, your test should actually check that the content matches what is displayed after clicking the ‘Show message’ button.
 
 ## Task 1
-The solutions can be accessed with google sheet via https://docs.google.com/spreadsheets/d/14SBLjZzp2FaHVPvxToNPB4rDMB2S9SzsYeXdO61zro4/edit?usp=sharing
+The solution can be accessed with google sheet via https://docs.google.com/spreadsheets/d/14SBLjZzp2FaHVPvxToNPB4rDMB2S9SzsYeXdO61zro4/edit?usp=sharing
 
 ## Task 2
 The solution is provided in the 'CypressAutomation' folder of this repository. The test was implemented using the BDD automation framework and the Page Object model.
