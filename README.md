@@ -38,8 +38,8 @@ The solution is provided in the 'CypressAutomation' folder of this repository. T
 11. All spec files will be available to run. You can select a spec file to run.
 
 ## Note
-1. Operating system used in the course of this assessment is 'macOS' and the browser used is 'Chrome'.
+1. The operating system used for this assessment is 'macOS' and the browser used is 'Chrome'.
 2. Automated test cases are; SFD03, SFD04, SFD07, SFD08, SFD09, SDL03, SDL03, BST02, BST03, BSM02, BSM04 and BSM11.
-3. The positive test case with ID 'SDL07 and 'SDL08' could not not be automated because it failed when manually executed. 
+3. The positive test case with ID 'SDL07 and 'SDL08' could not be automated because it failed when manually executed. 
 For quick summary, the multi select functionality of the 'Select dropdown list' feature could not be automated.
-4. VScode, cypress, cucumber, node, git are prerequisites to a successful test execution.
+4. VScode, cypress, cucumber, node, git are prerequisites for successful test execution.
