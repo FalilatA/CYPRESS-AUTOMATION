@@ -28,7 +28,7 @@ The solution is provided in the 'CypressAutomation' folder of this repository. T
 ## Steps to execute scripts
 1. Launch your VSCode app
 2. Open terminal and enter 'git clone'. (Github must have been authenticated with VSCode)
-3. A prompt will appear; enter the repository URL 'https://github.com/FalilatA/QUIDAX-QA-ASSESSMENT'.
+3. A prompt will appear; enter the repository URL; https://github.com/FalilatA/QUIDAX-QA-ASSESSMENT.git
 4. Select your storage folder for the repository and save.
 5. VSCode should open the cloned repository folder.
 6. Open terminal and enter 'cd CypressAutomation'. This command directs you to CypressAutomation folder to begin test execution.
