@@ -4,20 +4,20 @@ This repository contains answers to the QUIDAX Quality Assurance Engineer Assess
 ## Exercise
 Task 1- Functional testing and defect management
 Design test cases for the following forms and document all defects identified with clear reproducible steps
-● Input forms:
-○ Simple form demo: Single input field and multiple input fields
-○ Select Dropdown List: Select List Demo and Multi Select List Demo
-● Alerts and models:
-○ Bootstrap alerts: Bootstrap alert messages
-○ Bootstrap modal: Single modal example and Multiple modal example
+1. Input forms:
+Simple form demo: Single input field and multiple input fields
+Select Dropdown List: Select List Demo and Multi Select List Demo
+2. Alerts and models:
+Bootstrap alerts: Bootstrap alert messages
+Bootstrap modal: Single modal example and Multiple modal example
 You can also indicate improvement recommendations to the respective forms.
 
 Task 2- Test Automation
 Write automated web-based tests for all positive test cases designed in Task 1
-● A JavaScript framework eg Cypress is recommended. You can also use any other
+A JavaScript framework eg Cypress is recommended. You can also use any other
 framework you are comfortable working with.
-● The framework should be designed using a page object model approach.
-● Incorporate BDD into the framework if you are familiar with it.
+The framework should be designed using a page object model approach.
+Incorporate BDD into the framework if you are familiar with it.
 Notes: Each test case should include validations for form actions. For example, In the single form demo page, when you enter a value into the text field, your test should actually check that the content matches what is displayed after clicking the ‘Show message’ button.
 
 ## Task 1
@@ -40,7 +40,8 @@ The solution is provided in the 'CypressAutomation' folder of this repository. T
 11. All spec files will be available to run. You can select a spec file to run.
 
 ## Note
-● Operating system used in the course of this assessment is 'macOS' and the browser used is 'Chrome'.
-● Automated test cases are; SFD03, SFD04, SFD07, SFD08, SFD09, SDL03, SDL03, BST02, BST03, BSM02, BSM04 and BSM11.
-● The positive test case with ID 'SDL07' could not not be automated because it failed manually. For quick summary, the multi select functionality of the 'Select dropdown list' feature could not be automated.
-● VScode, cypress, cucumber, node, git are prerequisites to a successful test execution.
+1. Operating system used in the course of this assessment is 'macOS' and the browser used is 'Chrome'.
+2. Automated test cases are; SFD03, SFD04, SFD07, SFD08, SFD09, SDL03, SDL03, BST02, BST03, BSM02, BSM04 and BSM11.
+3. The positive test case with ID 'SDL07 and 'SDL08' could not not be automated because it failed when manually executed. 
+For quick summary, the multi select functionality of the 'Select dropdown list' feature could not be automated.
+4. VScode, cypress, cucumber, node, git are prerequisites to a successful test execution.
