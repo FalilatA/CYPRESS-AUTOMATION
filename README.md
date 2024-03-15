@@ -1,31 +1,13 @@
-# QUIDAX-QA-ASSESSMENT
-This repository contains answers to the QUIDAX Quality Assurance Engineer Assessment.
+# CYPRESS_AUTOMATION- B
+This repository contain automation of the Selenium Easy Demo website
+https://demo.seleniumeasy.com/
 
-## Exercise
-Task 1- Functional testing and defect management
-Design test cases for the following forms and document all defects identified with clear reproducible steps
-1. Input forms:
-* Simple form demo: Single input field and multiple input fields
-* Select Dropdown List: Select List Demo and Multi Select List Demo
-2. Alerts and models:
-* Bootstrap alerts: Bootstrap alert messages
-* Bootstrap modal: Single modal example and Multiple modal example
-* You can also indicate improvement recommendations to the respective forms.
 
-Task 2- Test Automation
-Write automated web-based tests for all positive test cases designed in Task 1
-* A JavaScript framework eg Cypress is recommended. You can also use any other framework you are comfortable working with.
-* The framework should be designed using a page object model approach.
-* Incorporate BDD into the framework if you are familiar with it.
-* Notes: Each test case should include validations for form actions. For example, In the single form demo page, when you enter a value into the text field, your test should actually check that the content matches what is displayed after clicking the ‘Show message’ button.
+Test cases can be accessed with Google sheet via https://docs.google.com/spreadsheets/d/14SBLjZzp2FaHVPvxToNPB4rDMB2S9SzsYeXdO61zro4/edit?usp=sharing
 
-## Task 1
-The solution can be accessed with Google sheet via https://docs.google.com/spreadsheets/d/14SBLjZzp2FaHVPvxToNPB4rDMB2S9SzsYeXdO61zro4/edit?usp=sharing
+The test automation was implemented using the BDD automation framework and the Page Object model.
 
-## Task 2
-The solution is provided in the 'CypressAutomation' folder of this repository. The test was implemented using the BDD automation framework and the Page Object model.
-
-## Steps to execute scripts
+## Steps to execute test scripts
 1. Launch your VSCode app
 2. Open terminal and navigate to the folder where you want to clone the repository.
 3. When in the folder, enter 'git clone https://github.com/FalilatA/QUIDAX-QA-ASSESSMENT.git'. (Github must have been authenticated with VSCode)
