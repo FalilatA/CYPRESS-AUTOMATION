@@ -10,7 +10,7 @@ The test automation was implemented using the BDD automation framework and the P
 ## Steps to execute test scripts
 1. Launch your VSCode app
 2. Open terminal and navigate to the folder where you want to clone the repository.
-3. When in the folder, enter 'git clone https://github.com/FalilatA/QUIDAX-QA-ASSESSMENT.git'. (Github must have been authenticated with VSCode)
+3. When in the folder, enter 'git clone '. (Github must have been authenticated with VSCode)
 5. On VSCode, open the cloned repository folder after cloning is successful.
 6. Open terminal and enter 'cd CypressAutomation'. This command directs you to CypressAutomation folder to begin test execution.
 7. Still on terminal, install cypress using the command 'npm install cypress --save -dev'.
